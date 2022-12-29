@@ -3,11 +3,11 @@
   padding-bottom: 64px;
 }
 
-.maxWidthWrapper {
-}
+.maxWidthWrapper {}
 
 .header {
   padding-bottom: 64px;
+  max-width: 65%;
 }
 
 .title {
@@ -24,7 +24,29 @@
 }
 
 .characterWrapper {
+  position: fixed;
+  min-height: 500px;
+  right: 50px;
+  top: 200px;
 }
 
 .controlColumn {
+}
+
+@media only screen and (max-width: 768px) {
+  .controlColumn {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: scroll;
+    position: relative;
+  }
+}
+
+.background {
+  background-color: hsl(195deg, 20%, 86%);
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 40%;
 }
