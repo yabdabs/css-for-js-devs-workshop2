@@ -3,7 +3,9 @@
   padding-bottom: 64px;
 }
 
-.maxWidthWrapper {}
+.maxWidthWrapper {
+  position: relative;
+}
 
 .header {
   padding-bottom: 64px;
@@ -26,11 +28,12 @@
 .characterWrapper {
   position: fixed;
   min-height: 500px;
-  right: 50px;
+  left: 60%;
   top: 200px;
 }
 
 .controlColumn {
+  width: 50%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -40,6 +43,7 @@
     gap: 20px;
     overflow-x: scroll;
     position: relative;
+    width: 100%;
   }
 }
 

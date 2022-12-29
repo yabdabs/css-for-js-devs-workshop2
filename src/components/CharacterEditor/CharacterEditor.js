@@ -30,11 +30,10 @@ function App() {
 
   return (
     <main className={styles.characterEditor}>
-       <div
-          className={styles.background}
-        />
 
-<div className={styles.characterWrapper}>
+      <div className={styles.background} />
+
+      <div className={styles.characterWrapper}>
         <Character
           body={body}
           head={head}
